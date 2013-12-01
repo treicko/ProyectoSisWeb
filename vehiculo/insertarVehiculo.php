@@ -26,19 +26,14 @@
 	copy($_FILES['foto']['tmp_name'],$_FILES['foto']['name']);
 	//echo "La foto se registro en el servidor.<br>";
 	$nom=$_FILES['foto']['name'];
-	echo "$nom";
-	//echo "<img src=\"$nom\">";
-
-//	$nombre_archivo = $nom;//"C:/Users/DENYLSON2/Desktop/img.jpg";
-//	$gestor = fopen($nombre_archivo, "rb"); //abro el archivo que quiero insertar
-//	$contenido = fread($gestor, filesize($nombre_archivo)); //leo el contenido del mismo y luego lo cierro.
-//	fclose($gestor);
+	//echo "$nom";
+	
 	 $sql="INSERT INTO vehiculos (marca,modelo,anio,chasis,descripcion,tipo,estado,preciooferta,precioventa,foto) values ('$marca','$modelo','$anio','$chasis','$descripcion','$tipo','$estado','$preciooferta','$precioventa','$nom')"; //genero la instancia SQL y luego la ejecuto.
 	$result=mysql_query($sql,$db);  
 
 	if ($result) {
-		echo "Se insert corecto";
-	}
+		header('Location: mostrarVehiculos.php');
+	}else echo "ERROR EN LA CONSULTA";
 
-	//echo "<img src='mostrar.php' />"; 
+	
  ?>

@@ -44,8 +44,7 @@
 		//echo '<td>'.$row["Modificar"].'<br></td>';
 		//echo '<td>'.$row["Eliminar"].'<br></td>';
 		echo '<td><a href="modificarVehiculo.php?id='.$row["id"].'">Modificar</a><br></td>';
-		//echo '<td><a href="Eliminar.php?id=$id">Eliminar</a></td>';
-
+		echo '<td><a href="eliminarVehiculo.php?id='.$row["id"].'">Eliminar</a><br></td>';
 
 		
 	}
