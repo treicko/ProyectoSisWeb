@@ -18,7 +18,8 @@
 		<td>Direccion</td>
 		<td>Rol</td>
 		<td>Login</td>
-		<td>Password</td>	
+		<td>Password</td>
+		<td>Estado</td>	
 		<td colspan="2">Accionaes</td>	
 	</tr>
 
@@ -35,9 +36,10 @@
 		echo '<td>'.$row["rol"].'<br></td>';
 		echo '<td>'.$row["login"].'<br></td>';
 		echo '<td>'.$row["password"].'<br></td>';
+		echo '<td>'.$row["estado"].'<br></td>';
 
-		echo '<td><a href="modificarVehiculo.php?id='.$id.'">Modificar</a><br></td>';
-		echo '<td><a href="eliminarVehiculo.php?id='.$id.'">Eliminar</a><br></td></tr>';
+		echo '<td><a href="modificarUsuarioFormulario.php?id='.$id.'">Modificar</a><br></td>';
+		echo '<td><a href="eliminarUsuario.php?id='.$id.'">Eliminar</a><br></td></tr>';
 	}
 ?>
 </table>	

@@ -27,5 +27,4 @@
 		header('Location: mostrarUsuarios.php');
 	}else echo "ERROR EN LA CONSULTA";
 
-	
  ?>
