@@ -24,7 +24,7 @@
 		$result=mysql_query($sql,$db);  
 
 		if ($result) {
-			header('Location: mostrarUsuarios.php');
+			header('Location: ../cliente/indexCliente.php');
 		}else{
 			 echo "ERROR EN LA CONSULTA";
 		}

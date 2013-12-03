@@ -9,7 +9,18 @@
 	//$query = "SELECT * FROM `practica5`.`productos`";
 
 	$usuario_editar = mysql_query($sql, $db);
-	$fila=mysql_fetch_object($usuario_editar);
+	$fila=mysql_fetch_array($usuario_editar);
+
+	if($fila['rol']=="gerente"){	
+		require('../gerente/headerGerente.php');
+	}
+	else if ($fila['rol']=="vendendor") {
+		require('../vendedor/headerVendedor.php');
+		
+	}
+	else{
+		require('../cliente/headerCliente.php');
+	}
 
 	//crear el formulario
 ?>
@@ -20,32 +31,45 @@
 		<input type="hidden" name="id" value="<?php echo $id;?>">
 
 		<label>C&eacute;dula de Identidad:</label>
-		<input title="solo n&uacute;meros ej: 6668654" type="text" name="ci" value="<?php echo $fila->ci;?>" placeholder="C&eacute;dula de Identidad" pattern="[0-9]*" required>
+		<input title="solo n&uacute;meros ej: 6668654" type="text" name="ci" value="<?php echo $fila['ci'];?>" placeholder="C&eacute;dula de Identidad" pattern="[0-9]*" required>
 		
 		<br><label>Nombre:</label>
-		<input type="text" name="nombre" value="<?php echo $fila->nombre;?>" placeholder="Nombre y Apellidos" required>
+		<input type="text" name="nombre" value="<?php echo $fila['nombre'];?>" placeholder="Nombre y Apellidos" required>
 		
 		<br><label>Email:</label>
-		<input title="formato: email@ejemplo.com" type="email" name="email" value="<?php echo $fila->email;?>" placeholder="email@ejemplo.com">
+		<input title="formato: email@ejemplo.com" type="email" name="email" value="<?php echo $fila['email'];?>" placeholder="email@ejemplo.com">
 		
 		<br><label>Tel&eacute;fono:</label>
-		<input tittle="solo n&uacute;meros ej: 79472634 o 44291743" type="text" name="telefono" value="<?php echo $fila->telefono;?>" placeholder="Telefono &oacute; Celular" pattern="[0-9]*">
+		<input tittle="solo n&uacute;meros ej: 79472634 o 44291743" type="text" name="telefono" value="<?php echo $fila['telefono'];?>" placeholder="Telefono &oacute; Celular" pattern="[0-9]*">
 		
 		<br><label>Direcci&oacute;n:</label>
-		<input type="text" name="direccion" value="<?php echo $fila->direccion;?>" placeholder="Direccion">
+		<input type="text" name="direccion" value="<?php echo $fila['direccion'];?>" placeholder="Direccion">
 		
 		<br><label>Login:</label>
-		<input type="text" name="login" value="<?php echo $fila->login;?>" placeholder="Nombre de usuario" required>
+		<input type="text" name="login" value="<?php echo $fila['login'];?>" placeholder="Nombre de usuario" required>
 		
 		<br><label>Password:</label>
-		<input type="password" name="password" value="<?php echo $fila->password;?>" placeholder="Contraseña" required>
+		<input type="password" name="password" value="<?php echo $fila['password'];?>" placeholder="Contraseña" required>
 
 		<br><label>Confirmar Password:</label>
-		<input type="password" name="confirmPassword" value="<?php echo $fila->password;?>" placeholder="Confirmar Contraseña" required>
+		<input type="password" name="confirmPassword" value="<?php echo $fila['password'];?>" placeholder="Confirmar Contraseña" required>
 		
 		<input type="submit" name="" value="Guardar">
 
 	</form>
 </center>
+
+<?php 
+	if($fila['rol']=="gerente"){	
+		require('../gerente/footerGerente.php');
+	}
+	else if ($fila['rol']=="vendendor") {
+		require('../vendedor/footerVendedor.php');
+		
+	}
+	else{
+		require('../cliente/footerCliente.php');
+	} 
+?>
 
 <?php mysql_close($db); ?>

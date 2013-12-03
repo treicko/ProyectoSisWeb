@@ -1,15 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
- <head>
-  <title> New Document </title>
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
- </head>
+<?php include ("../login/seguridad.php");?>
 
- <body>
- 	<h1>Bienvenido Cliente: </h1>
- 	<a href="#">Vehiculos</a>
- </body>
-</html>
+<?php require('../cliente/headerCliente.php') ?>
+
+<?php $id = $_SESSION['idUsuario']; ?>
+
+	Autos: <br>
+ 	<br><a href="#">Ver catalogo Autos</a><br>
+
+ 	<br>Accesorios: <br>
+ 	<br><a href="#">Ver catalogo Accesorios</a><br>
+
+ 	<br>Perfil: <br>
+ 	<br><a href="../usuarios/perfilUsuario.php?id=<?php echo $id;?>">Ver Perfil</a>
+ 	<br><a href="../usuarios/modificarUsuarioFormulario.php?id=<?php echo $id;?>">Editar Perfil</a>
+
+ 	<br>
+
+<?php require('../cliente/footerCliente.php'); ?>

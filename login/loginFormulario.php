@@ -24,6 +24,8 @@
 							}		
 						?>
 					</label>
+
+					<a href="../usuarios/insertarUsuarioFormulario.php">Registrarse</a>
 			
 				</div>
 
