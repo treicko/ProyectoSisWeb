@@ -1,4 +1,6 @@
 <?php 
+
+
 	$db=mysql_connect('localhost','root' ,'')or die("cannot connect");
 	mysql_select_db('autoventabd') or die("Query failed". mysql_error());
 	$sql="SELECT * from usuarios";
@@ -7,7 +9,9 @@
 
 	$res = mysql_query($sql, $db);
  ?>
-<center>
+
+ <?php require('../headerMostrar.php'); ?>
+
 <table border="2">
 	<tr>
 		<td>Id</td>
@@ -43,4 +47,4 @@
 	}
 ?>
 </table>	
-</center>
+<?php require('../footer.php'); ?>

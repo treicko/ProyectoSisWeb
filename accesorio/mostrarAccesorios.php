@@ -7,15 +7,14 @@
 	$res = mysql_query($sql, $db);
  ?>
 
-
-<div id="contenido">
+<?php require('../headerMostrar.php') ?>
 	
  <a href="formularioAccesorio.php" title="">Crear Nuevo Accesorio</a>
 
- <br> <br>
+ 
  
 
-	<table border="2" bgcolor="#4F65BF">
+	<table border="2" bgcolor="#7A7D6A">
 		<tr>
 			<td>Id</td>
 			<td>marca</td>
@@ -58,5 +57,6 @@
 	</table>	
 
 
-</div>
+
+<?php require('../footer.php') ?>
 

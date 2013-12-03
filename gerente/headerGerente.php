@@ -4,7 +4,7 @@
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<title>..::AUTO MOTORS S.R.L::..</title>
-			<link rel="stylesheet" href="../css/estilo.css">
+			<link rel="stylesheet" href="../css/estiloGerente.css">
 	</head>
 	<body>
 		<div id="contenido">
