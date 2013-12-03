@@ -18,6 +18,11 @@ h1
 	color: #4F9D9D;
 	font-family: 'Russo One', sans-serif;
 }
+h3
+{
+	color: #68B3B3;
+	font-family: 'Russo One', sans-serif;
+}
 header hgroup h1{
 	border-bottom:solid;
 	padding-bottom:10px;/*espacio del borde hacia abajo*/
@@ -84,6 +89,10 @@ input {
 	float:left;
 	width: 33%;
 }
+#column3 {
+		float:left;
+		width: 33%;
+	}
 img {
 
 	border-radius: 5px;
