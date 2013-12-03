@@ -13,7 +13,8 @@
 
 	copy($_FILES['foto']['tmp_name'],$_FILES['foto']['name']);
 	//echo "La foto se registro en el servidor.<br>";
-	$nom=$_FILES['foto']['name'];
+	$nom='http://localhost/ProyectoSisWeb/ProyectoSisWeb/accesorio/';
+	$nom.=$_FILES['foto']['name'];
 	//echo "$nom";
 	
 	 $sql="INSERT INTO accesorios (marca,modelo,anio,descripcion,categoria,preciooferta,precioventa,foto) values ('$marca','$modelo','$anio','$descripcion','$categoria','$preciooferta','$precioventa','$nom')"; //genero la instancia SQL y luego la ejecuto.
