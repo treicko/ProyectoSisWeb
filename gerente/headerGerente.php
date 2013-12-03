@@ -14,10 +14,9 @@
 				</hgroup>
 			<nav>
 				<ul>
-					<li><a href="../gerente/indexgerente.php">Index</a></li>
-					<li><a href="">Vehiculos</a></li>
-					<li><a href="">Accesorios</a></li>
-					<li><a href="">Reportes</a></li>
+					<li><a href="../login/loginFormulario.php">Log-In</a></li>
+					<li><a href="../vehiculo/mostrarVehiculos.php">Vehiculos</a></li>
+					<li><a href="../accesorio/mostrarAccesorios.php">Accesorios</a></li>
 					<li><a href="../login/logout.php">Salir</a></li>
 				</ul>
 			</nav>

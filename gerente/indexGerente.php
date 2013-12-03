@@ -5,6 +5,7 @@
 <?php $id = $_SESSION['idUsuario']; ?>
 
 <?php require('headerGerente.php'); ?>
+
 	Vehiculos: <br>
  	<br><a href="#">Registrar Un vehiculo</a>
  	<br><a href="#">Modificar Un vehiculo</a>
