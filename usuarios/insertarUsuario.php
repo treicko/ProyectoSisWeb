@@ -8,23 +8,30 @@
 	$email=$_POST['email'];
 	$telefono=$_POST['telefono'];
 	$direccion=$_POST['direccion'];
-	$rol = "cliente";
+	$rol = $_POST['rol'];
 	$login=$_POST['login'];
 	$password=$_POST['password'];
 	$confirmPassword=$_POST['confirmPassword'];
-	
-	
-	 $sql="INSERT INTO usuarios (ci,nombre,email,telefono,direccion,rol,login,password) VALUES 
-	 ('$ci','$nombre','$email','$telefono','$direccion','$rol','$login','$password')"; 
-	 //genero la instancia SQL y luego la ejecuto.
-	$result=mysql_query($sql,$db);  
+	$estado = "activo";
 
-	//$query = "INSERT INTO `prueba`.`usuarios` (`Id`, `Login`, `Password`, `Nombre`, `Direccion`) VALUES (NULL, '$user', '$pass', '$name', '$address')";
-		
-	//	$res = mysql_query($query, $db);
+	if($password == $confirmPassword)
+	{
+		$passwordEncriptado = md5($password);
 
-	if ($result) {
-		header('Location: mostrarUsuarios.php');
-	}else echo "ERROR EN LA CONSULTA";
+		$sql="INSERT INTO usuarios (ci,nombre,email,telefono,direccion,rol,login,password, estado) VALUES 
+		('$ci','$nombre','$email','$telefono','$direccion','$rol','$login','$passwordEncriptado', '$estado')"; 
+
+		$result=mysql_query($sql,$db);  
+
+		if ($result) {
+			header('Location: mostrarUsuarios.php');
+		}else{
+			 echo "ERROR EN LA CONSULTA";
+		}
+	}
+	else{
+		echo "las Contrasenias no coinciden";
+	}
+	
 
  ?>
