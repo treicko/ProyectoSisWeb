@@ -35,7 +35,7 @@
 				<br><label>Confirmar Password:</label>
 				<input type="password" name="confirmPassword"  placeholder="Confirmar Contraseña" required>
 				
-				<input type="hidden" name="rol" value="cliente">
+				<input type="hidden" name="rol" value="vendendor">
 
 				<input type="submit" name="" value="Registrar">
 			</form>
