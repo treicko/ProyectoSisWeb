@@ -9,11 +9,13 @@
 	$res = mysql_query($sql, $db);
  ?>
 
- <?php require('../header.php') ?>
+ <?php require('../headerMostrar.php') ?>
 
 
 
-<table border="2" bgcolor="#7A7D6A">
+
+
+<table border="1" bgcolor="#7A7D6A">
 	<tr>
 		<td>Id</td>
 		<td>marca</td>
@@ -43,7 +45,8 @@
 		echo '<td>'.$row["estado"].'<br></td>';
 		echo '<td>'.$row["preciooferta"].'<br></td>';
 		echo '<td>'.$row["precioventa"].'<br></td>';
-		echo "<td><img src='".$row['foto']."' width='200' height='200' /><br></td>";
+		echo '<td><a href="informacionVehiculo.php?id='.$row["id"].'" >';
+		echo "<img src='".$row['foto']."' width='150' height='150' /></a><br></td>";
 
 		//echo '<td>'.$row["Modificar"].'<br></td>';
 		//echo '<td>'.$row["Eliminar"].'<br></td>';

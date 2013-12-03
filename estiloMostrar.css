@@ -58,12 +58,11 @@ a
 	color: #00A6A6;/*color de los enlaces*/
 	font-weight: bold;/*negrita a los enlaces*/
 }
-
-#textoPrincipal /**/
+#textoPrincipal 
 {
 	width:900px;
 	height: 400px;
-	background-color:#1d1d1d;
+	background-color: #67695A;
 	color: #fff;/*texto color*/
 	margin: 0 auto;
 	text-align: left;
@@ -71,14 +70,8 @@ a
 	padding: 20px;/*para q el texto no se salga de los bordes redondeados*/
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);/*sombras al cuadro*/
 }
-input {
-	border-radius: 5px;
-}
-#imagen {
-		float:left;
-		width: 100px;
-}
-img {
 
+
+input {
 	border-radius: 5px;
 }
