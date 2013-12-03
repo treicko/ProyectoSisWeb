@@ -26,7 +26,10 @@
 
 	<div id="column2">
 	 <p><?php echo $fila->descripcion; ?></p>
-	 </div>
+	</div>
+	<div id="column3">
+	 <center><h1><?php echo $fila->preciooferta; ?> $u$</h1></center>
+	</div>
 </section>
 
 

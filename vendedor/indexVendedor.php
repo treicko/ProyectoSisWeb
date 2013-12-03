@@ -4,7 +4,7 @@
 
 <?php require('../vendedor/headerVendedor.php'); ?>
 	Venta: <br>
- 	<br><a href="../venta/mostrarVehiculosVenta.php">Registrar Una Venta</a><br>
+ 	<br><a href="../vehiculo/buscarVehiculoFormulario.php">Registrar Una Venta</a><br>
 
  	<br>Perfil: <br>
  	<br><a href="../usuarios/perfilUsuario.php?id=<?php echo $id;?>">Ver Perfil</a>

@@ -5,20 +5,28 @@
 
 	$db=mysql_connect('localhost','root' ,'')or die("cannot connect");
 	mysql_select_db('autoventabd') or die("Query failed". mysql_error());
-	$sql="SELECT * from vehiculos";
+	
+	$variableBusqueda = $_POST['atributoBusqueda'];
 
-	//$query = "SELECT * FROM `practica5`.`productos`";
+	$sql = "SELECT * from vehiculos where 
+		id like '$variableBusqueda' or
+		marca like '$variableBusqueda' or  
+		modelo like '$variableBusqueda' or  								   
+		anio like '$variableBusqueda' or  
+		chasis like '$variableBusqueda' or  									  
+		descripcion like '$variableBusqueda' or  
+		tipo like '$variableBusqueda' or 								 
+		preciooferta like '$variableBusqueda' or  
+		precioventa like '$variableBusqueda'";
 
 	$res = mysql_query($sql, $db);
+
+	$cant = mysql_num_rows($res);
+
+	echo "num colum: ".$cant;
 ?>
 
  <?php require('../vendedor/headerVendedor.php') ?>
-
-<form method="post" action="">
-		<input type="text" name="">
-		<input type="submit" value="Buscar" name="submit">
-</form>
-
 
 
 <table border="1" bgcolor="#7A7D6A">
@@ -34,6 +42,7 @@
 		<td>precio oferta</td>
 		<td>precio venta</td>
 		<td>foto</td>
+		<td>Seleccionar</td>
 	</tr>
 
 
@@ -56,10 +65,7 @@
 
 		//echo '<td>'.$row["Modificar"].'<br></td>';
 		//echo '<td>'.$row["Eliminar"].'<br></td>';
-		echo '<td><a href="modificarVehiculo.php?id='.$row["id"].'">Modificar</a><br></td>';
-		echo '<td><a href="eliminarVehiculo.php?id='.$row["id"].'">Eliminar</a><br></td>';
-
-		
+		echo '<td><a href="../venta/aniadirVehiculoAVenta.php?id='.$row["id"].'">Seleccionar</a><br></td></tr>';
 	}
 
 
