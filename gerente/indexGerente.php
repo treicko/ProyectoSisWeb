@@ -7,7 +7,7 @@
 <?php require('headerGerente.php'); ?>
 
 	Vehiculos: <br>
- 	<br><a href="#">Registrar Un vehiculo</a>
+ 	<br><a href="../vehiculo/formularioVehiculo.php">Registrar Un vehiculo</a>
  	<br><a href="#">Modificar Un vehiculo</a>
  	<br><a href="#">Eliminar un vehiculo</a><br>
 
