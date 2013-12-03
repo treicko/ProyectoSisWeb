@@ -17,6 +17,7 @@
 					<li><a href="../cliente/indexCliente.php">Index</a></li>
 					<li><a href="">Vehiculos</a></li>
 					<li><a href="">Accesorios</a></li>
+					<li><a href=""></a></li>
 					<li><a href="../login/logout.php">Salir</a></li>
 				</ul>
 			</nav>

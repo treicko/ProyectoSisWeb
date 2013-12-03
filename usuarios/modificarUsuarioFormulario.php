@@ -24,8 +24,6 @@
 
 	//crear el formulario
 ?>
-
-<center>
 	<form action="modificarUsuario.php" method="POST" enctype="multipart/form-data">
 
 		<input type="hidden" name="id" value="<?php echo $id;?>">
@@ -57,7 +55,6 @@
 		<input type="submit" name="" value="Guardar">
 
 	</form>
-</center>
 
 <?php 
 	if($fila['rol']=="gerente"){	
