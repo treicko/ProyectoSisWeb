@@ -14,7 +14,7 @@
 	if($row['rol']=="gerente"){	
 		require('../gerente/headerGerente.php');
 	}
-	else if ($row['rol']=="vendendor") {
+	else if ($row['rol']=="vendedor") {
 		require('../vendedor/headerVendedor.php');
 		
 	}

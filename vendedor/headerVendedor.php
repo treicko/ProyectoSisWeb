@@ -14,6 +14,7 @@
 				</hgroup>
 			<nav>
 				<ul>
+					<li><a href="../vendedor/indexVendedor.php">Index</a></li>
 					<li><a href="../login/logout.php">Salir</a></li>
 				</ul>
 			</nav>

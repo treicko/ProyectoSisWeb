@@ -14,10 +14,11 @@
 				</hgroup>
 			<nav>
 				<ul>
-					<li><a href="../index.html">Vehiculos</a></li>
-					<li><a href="login/loginFormulario.php">Accesorios</a></li>
-					<li><a href="../vehiculo/mostrarVehiculos.php">Reportes</a></li>
-					<li><a href="../cotizacion/cotizacion.php">Salir</a></li>
+					<li><a href="../gerente/indexgerente.php">Index</a></li>
+					<li><a href="">Vehiculos</a></li>
+					<li><a href="">Accesorios</a></li>
+					<li><a href="">Reportes</a></li>
+					<li><a href="../login/logout.php">Salir</a></li>
 				</ul>
 			</nav>
 			</header>
