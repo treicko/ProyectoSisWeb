@@ -1,5 +1,7 @@
-<?php 
 
+<?php 
+	//require("http://localhost/ProyectoSisWeb/ProyectoSisWeb/header.php");
+	//include("http://localhost/ProyectoSisWeb/ProyectoSisWeb/header.php");
 	$db=mysql_connect('localhost','root' ,'')or die("cannot connect");
 	mysql_select_db('autoventabd') or die("Query failed". mysql_error());
 
@@ -37,7 +39,7 @@
 		//header('Location: loginFormulario.php');
 		header("Location: loginFormulario.php?errorusuario=si");
 	}
-
 	mysql_close($db);
+?>
 
- ?>
+

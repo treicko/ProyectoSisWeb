@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-	<html>
-	<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>..::Nuevo Accesorio::..</title>
-			<link rel="stylesheet" href="">
-	</head>
-	<body>
+
 		<div name="contenido">
 
 			<form action="insertarAccesorio.php" method="POST" enctype="multipart/form-data">
@@ -37,5 +29,3 @@
 			</form>
 			
 		</div>
-	</body>
-</html>
