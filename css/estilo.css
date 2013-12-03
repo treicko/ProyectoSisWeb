@@ -10,7 +10,9 @@ body
 	margin: 0 auto;
 	text-align: center;
 }
-
+label{
+	display:block; /*pone espacios cada vez q termnal un label*/
+}
 h1
 {
 	color: #4F9D9D;
@@ -68,4 +70,7 @@ a
 	border-radius: 20px; /*para redondear los bordes*/
 	padding: 20px;/*para q el texto no se salga de los bordes redondeados*/
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);/*sombras al cuadro*/
+}
+input {
+	border-radius: 5px;
 }

@@ -5,8 +5,9 @@
 
 ?>
 
+<?php require('../header.php'); ?>
 
-<div id="contenido">
+
 	
 	<form action="buscarCotizacion.php" method="post" accept-charset="utf-8">
 		
@@ -30,4 +31,4 @@
 		<input type="submit" name="" value="BUSCAR">
 	</form>
 
-</div>
+<?php require('../footer.php') ?>

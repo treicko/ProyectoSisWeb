@@ -18,7 +18,7 @@
 ?>
 
 
-<div id="contenido">
+<?php require('../header.php') ?>
 	
 	<table border="1" bgcolor="#7A7D6A">
 
@@ -50,6 +50,6 @@
 		}
 	?>
 	</table>	
-</div>
+<?php require('../footer.php') ?>
 
 

@@ -8,8 +8,12 @@
 
 	$res = mysql_query($sql, $db);
  ?>
-<center>
-<table border="2" bgcolor="#4F65BF">
+
+ <?php require('../header.php') ?>
+
+
+
+<table border="2" bgcolor="#7A7D6A">
 	<tr>
 		<td>Id</td>
 		<td>marca</td>
@@ -55,5 +59,7 @@
 
 </table>	
 
-</center>
+
+
+<?php require('../footer.php') ?>
 
