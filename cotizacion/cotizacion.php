@@ -6,25 +6,28 @@
 ?>
 
 
-
-<form action="buscarCotizacion.php" method="post" accept-charset="utf-8">
+<div id="contenido">
 	
-	<label>VEHICULO</label>
-	<input type="radio" name="tabla" value="vehiculos" placeholder="">
-	<br>
-	
-	<label>ACCESORIO</label>
-	<input type="radio" name="tabla" value="accesorios" placeholder="">
-	<br>
+	<form action="buscarCotizacion.php" method="post" accept-charset="utf-8">
+		
+		<label>VEHICULO</label>
+		<input type="radio" name="tabla" value="vehiculos" placeholder="">
+		<br>
+		
+		<label>ACCESORIO</label>
+		<input type="radio" name="tabla" value="accesorios" placeholder="">
+		<br>
 
 
-	<LABEL>TIPO::</LABEL>
+		<LABEL>TIPO::</LABEL>
 
-	<select name="tipo" >
-		<option value="marca">MArca</option>
-		<option value="modelo">Modelo</option>
-		<option value="modelo">Modelo</option>
-		<option value="preciooferta">Precio De Oferta</option>
-	</select>
-	<input type="submit" name="" value="BUSCAR">
-</form>
+		<select name="tipo" >
+			<option value="marca">MArca</option>
+			<option value="modelo">Modelo</option>
+			<option value="modelo">Modelo</option>
+			<option value="preciooferta">Precio De Oferta</option>
+		</select>
+		<input type="submit" name="" value="BUSCAR">
+	</form>
+
+</div>
