@@ -15,8 +15,9 @@
 			<nav>
 				<ul>
 					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="login/loginFormulario.php">Log-In</a></li>
-					<li><a href="../vehiculo/mostrarVehiculos.php">Vehiculos</a></li>
+					<li><a href="../login/loginFormulario.php">Log-In</a></li>
+					<li><a href="../vehiculo/mostrarVehiculosCliente.php">Vehiculos</a></li>
+					<li><a href="../accesorio/mostrarAccesoriosCliente.php">Accesorios</a></li>
 					<li><a href="../cotizacion/cotizacion.php">Cotizacion</a></li>
 				</ul>
 			</nav>

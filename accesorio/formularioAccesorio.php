@@ -1,4 +1,4 @@
-
+<?php require('../header.php'); ?>
 		<div name="contenido">
 
 			<form action="insertarAccesorio.php" method="POST" enctype="multipart/form-data">
@@ -29,3 +29,4 @@
 			</form>
 			
 		</div>
+<?php require('../footer.php'); ?>

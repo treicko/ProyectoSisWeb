@@ -7,9 +7,7 @@
 
 	$id=$_GET['id'];
 	
-	$sql="SELECT * from vehiculos where id=".$id;
-	
-	//$query = "SELECT * FROM `practica5`.`productos`";
+	$sql="SELECT * from accesorios where id=".$id;
 
 	$vehiculo_editar = mysql_query($sql, $db);
 	$fila=mysql_fetch_object($vehiculo_editar);
@@ -18,32 +16,19 @@
 ?>
 <section>
 	<h1><?php echo $fila->marca; ?></h1>
-	<h2><?php echo $fila->modelo; ?></h2>
+	<h2><?php echo $fila->categoria; ?></h2>
 	<h1><?php echo $fila->preciooferta; ?> $u$</h1>
 	<div id="column1">
 	<img src='<?php echo $fila->foto; ?>' width="200" height="200">
 	</div>
 	<div id="column2">
-		<p>Tipo:: <?php echo $fila->tipo; ?></p>
-		<p>Chasis:: 
-			<?php 
-				if ($fila->chasis ==true ) {
-				 	echo "Disponible";
-				 } else {
-				 	echo "Fuera de alcance";
-				 	
-				 }
-				  
-			?>
-		</p>
+		<p>Tipo:: <?php echo $fila->modelo; ?></p>
+		<p>Anio:: <?php echo $fila->anio; ?></p>
 
 	</div>
 	<div id="column3">
 	 <p><?php echo $fila->descripcion; ?></p>
-	</div>
-	<div id="column3">
-	 <center><h1><?php echo $fila->preciooferta; ?> $u$</h1></center>
-	</div>
+	 </div>
 </section>
 
 

@@ -18,6 +18,7 @@
 	
 	$preciooferta=$_POST['preciooferta'];
 	$precioventa=$_POST['precioventa'];
+	$eliminado='no';
 
 
 
@@ -29,7 +30,7 @@
 	$nom.=$_FILES['foto']['name'];
 	//echo "$nom";
 	
-	 $sql="INSERT INTO vehiculos (marca,modelo,anio,chasis,descripcion,tipo,estado,preciooferta,precioventa,foto) values ('$marca','$modelo','$anio','$chasis','$descripcion','$tipo','$estado','$preciooferta','$precioventa','$nom')"; //genero la instancia SQL y luego la ejecuto.
+	 $sql="INSERT INTO vehiculos (marca,modelo,anio,chasis,descripcion,tipo,estado,preciooferta,precioventa,foto,eliminado) values ('$marca','$modelo','$anio','$chasis','$descripcion','$tipo','$estado','$preciooferta','$precioventa','$nom','$eliminado')"; //genero la instancia SQL y luego la ejecuto.
 	$result=mysql_query($sql,$db);  
 
 	if ($result) {

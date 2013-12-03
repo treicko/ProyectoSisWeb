@@ -11,14 +11,14 @@
 
 
 	$sql="SELECT * from $tabla where $tipo=$tipo ";
-	echo "$sql";
+	
 	$res = mysql_query($sql, $db);
 
 
 ?>
 
 
-<?php require('../header.php') ?>
+<?php require('../headerMostrar.php') ?>
 	
 	<table border="1" bgcolor="#7A7D6A">
 

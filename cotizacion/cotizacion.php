@@ -5,7 +5,7 @@
 
 ?>
 
-<?php require('../headerMostrar.php'); ?>
+<?php require('../header.php'); ?>
 
 
 	
