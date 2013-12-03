@@ -7,12 +7,14 @@
 	//$query = "SELECT * FROM `practica5`.`productos`";
 
 	$res = mysql_query($sql, $db);
- ?>
+?>
 
- <?php require('../gerente/headerGerente.php') ?>
+ <?php require('../vendedor/headerVendedor.php') ?>
 
-
-
+<form method="post" action="">
+		<input type="text" name="">
+		<input type="submit" value="Buscar">
+</form>
 
 
 <table border="1" bgcolor="#7A7D6A">
@@ -64,5 +66,5 @@
 
 
 
-<?php require('../gerente/footerGerente.php') ?>
+<?php require('../vendedor/footerVendedor.php') ?>
 

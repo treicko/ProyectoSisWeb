@@ -19,6 +19,3 @@
 				</ul>
 			</nav>
 			</header>
-
-			<section>
-				<div id="textoPrincipal">
