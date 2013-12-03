@@ -1,15 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
- <head>
-  <title> New Document </title>
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
- </head>
+<?php include ("../login/seguridad.php");?>
 
- <body>
- 	<h1>Bienvenido Vendedor: </h1>
- 	<a href="#">Registrar Una venta</a>
- </body>
-</html>
+<?php $id = $_SESSION['idUsuario']; ?>
+
+<?php require('headerVendedor.php'); ?>
+	Venta: <br>
+ 	<br><a href="#">Registrar Una Venta</a><br>
+
+ 	<br>Perfil: <br>
+ 	<br><a href="../usuarios/modificarUsuarioFormulario.php?id=<?php echo $id;?>">Editar Perfil</a>
+
+ 	<br>
+
+<?php require('footerVendedor.php') ?>

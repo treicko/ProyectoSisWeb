@@ -32,7 +32,7 @@
 	$result=mysql_query($ssql,$db);
 
 	if($result){
-		header('Location: mostrarUsuarios.php');
+		header("Location: perfilUsuario.php?id=".$id."");
 		//echo "actualizado";
 	}else{
 		echo 'erros';

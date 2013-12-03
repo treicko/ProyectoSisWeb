@@ -1,15 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
- <head>
-  <title> New Document </title>
-  <meta name="Generator" content="EditPlus">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
- </head>
+<?php include ("../login/seguridad.php");?>
 
- <body>
- 	<h1>Bienvenido Cliente: </h1>
- 	<a href="#">Vehiculos</a>
- </body>
-</html>
+<?php require('headerCliente.php'); ?>
+
+<H1>Hola soy cliente</h1>
+
+<?php require('footerCliente.php') ?>
