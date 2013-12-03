@@ -12,7 +12,7 @@
  <?php require('../gerente/headerGerente.php') ?>
 
 
-
+<a href="formularioVehiculo.php" >REGISTRAR VEHICULO</a><BR>
 
 
 <table border="1" bgcolor="#7A7D6A">
@@ -34,25 +34,29 @@
 <?php
 	while ($row=mysql_fetch_array($res))
 	{
-		$id=$row["id"];
-		echo '<tr><td>'.$row["id"].'&nbsp;</td>';
-		echo '<td>'.$row["marca"].'&nbsp;</td>';
-		echo '<td>'.$row["modelo"].'&nbsp;</td>';
-		echo '<td>'.$row["anio"].'&nbsp;</td>';
-		echo '<td>'.$row["chasis"].'<br></td>';
-		echo '<td>'.$row["descripcion"].'<br></td>';
-		echo '<td>'.$row["tipo"].'<br></td>';
-		echo '<td>'.$row["estado"].'<br></td>';
-		echo '<td>'.$row["preciooferta"].'<br></td>';
-		echo '<td>'.$row["precioventa"].'<br></td>';
-		echo '<td><a href="informacionVehiculo.php?id='.$row["id"].'" >';
-		echo "<img src='".$row['foto']."' width='150' height='150' /></a><br></td>";
+		if ($row["eliminado"]=='no') {
+			# code...
+		
+		
+			$id=$row["id"];
+			echo '<tr><td>'.$row["id"].'&nbsp;</td>';
+			echo '<td>'.$row["marca"].'&nbsp;</td>';
+			echo '<td>'.$row["modelo"].'&nbsp;</td>';
+			echo '<td>'.$row["anio"].'&nbsp;</td>';
+			echo '<td>'.$row["chasis"].'<br></td>';
+			echo '<td>'.$row["descripcion"].'<br></td>';
+			echo '<td>'.$row["tipo"].'<br></td>';
+			echo '<td>'.$row["estado"].'<br></td>';
+			echo '<td>'.$row["preciooferta"].'<br></td>';
+			echo '<td>'.$row["precioventa"].'<br></td>';
+			echo '<td><a href="informacionVehiculo.php?id='.$row["id"].'" >';
+			echo "<img src='".$row['foto']."' width='150' height='150' /></a><br></td>";
 
-		//echo '<td>'.$row["Modificar"].'<br></td>';
-		//echo '<td>'.$row["Eliminar"].'<br></td>';
-		echo '<td><a href="modificarVehiculo.php?id='.$row["id"].'">Modificar</a><br></td>';
-		echo '<td><a href="eliminarVehiculo.php?id='.$row["id"].'">Eliminar</a><br></td>';
-
+			//echo '<td>'.$row["Modificar"].'<br></td>';
+			//echo '<td>'.$row["Eliminar"].'<br></td>';
+			echo '<td><a href="modificarVehiculo.php?id='.$row["id"].'">Modificar</a><br></td>';
+			echo '<td><a href="eliminarVehiculo.php?id='.$row["id"].'">Eliminar</a><br></td>';
+		}
 		
 	}
 
