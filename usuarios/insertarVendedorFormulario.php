@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-	<html>
-	<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>Agregar Vehiculo</title>
-			<link rel="stylesheet" href="">
-	</head>
-	<body>
-		<div name="contenido">
+<?php require('../header.php'); ?>
 
 			<form action="insertarUsuario.php" method="POST" enctype="multipart/form-data">
 
@@ -40,6 +31,4 @@
 				<input type="submit" name="" value="Registrar">
 			</form>
 			
-		</div>
-	</body>
-</html>
+<?php require('../footer.php') ?>

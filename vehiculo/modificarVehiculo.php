@@ -14,11 +14,12 @@
 	//crear el formulario
 ?>
 
-<center>
+<?php require('../header.php'); ?>
+
 	<form action ="updateVehiculo.php" method="post" enctype="multipart/form-data">
 		       <input type="hidden" name="id" value="<?php echo $id;?>">
 
-
+				<div id="column1">
 				<label>Marca:</label>
 				<input type="text" name="marca"  value="<?php echo $fila->marca; ?>" placeholder="Toyota/Nissan...">
 				
@@ -36,7 +37,8 @@
 				
 				<br><label>Tipo:</label>
 				<input type="text" name="tipo"  value="<?php echo $fila->tipo; ?>" placeholder="4x4/Familiar/deportivo...">
-				
+				</div>
+				<div id="column2">
 				<br><label>Estado:</label>
 				<select name="estado" >
 					<option value="1">disponible</option>
@@ -53,8 +55,7 @@
 			
 			<input type="submit" name="" value="GUARDAR">
 
-
+			</div>
 	</form>
-</center>
-
+<?php require('../footer.php') ?>
 <?php mysql_close($db); ?>

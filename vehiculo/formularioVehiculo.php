@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-	<html>
-	<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>Agregar Vehiculo</title>
-			<link rel="stylesheet" href="">
-	</head>
-	<body>
-		<div name="contenido">
+<?php require('../header.php'); ?>
+
 
 			<form action="insertarVehiculo.php" method="POST" enctype="multipart/form-data">
+				<div id="column1">
 				<label>Marca:</label>
 				<input type="text" name="marca"  placeholder="Toyota/Nissan...">
 				
@@ -27,7 +20,8 @@
 				
 				<br><label>Tipo:</label>
 				<input type="text" name="tipo"  placeholder="4x4/Familiar/deportivo...">
-				
+				</div>
+				<div id="column2">
 				<br><label>Estado:</label>
 				<select name="estado" >
 					<option value="1">disponible</option>
@@ -42,8 +36,6 @@
 				<br><label>Elige imagen</label><br>
 				<input type="file" name="foto"  placeholder="ingrese imagen">
 				<input type="submit" name="" value="enviar">
+				</div>
 			</form>
-			
-		</div>
-	</body>
-</html>
+<?php require('../footer.php') ?>
